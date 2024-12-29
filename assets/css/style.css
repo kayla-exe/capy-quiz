@@ -126,4 +126,20 @@ body {
         width: 100%;
         padding: 10% 0;
     }
+
+}
+
+@media (max-wdith: 320px) {
+    .game-area {
+        height: 75vh;
+    }
+
+    .questions-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    #answers-area {
+        padding: 10px 0;
+    }
 }
