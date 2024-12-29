@@ -60,12 +60,17 @@ body {
     padding: 10px;
     margin: 10px 0;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 /* button hover interactivity */
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: #222;
     color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
 }
 
 /* next button hidden until answer is selected */
@@ -95,4 +100,30 @@ body {
 .scores {
     padding: 25px;
     display: inline-block;
+}
+
+.correct {
+    background: #7aad86;
+}
+
+.incorrect {
+    background: #f4581e;
+}
+
+/* media queries */
+
+@media (max-width: 414px) {
+    .game-area {
+        width: 100%;
+    }
+
+    .questions-area {
+        width: 100%;
+        padding: 10% 0;
+    }
+
+    #answers-area {
+        width: 100%;
+        padding: 10% 0;
+    }
 }
