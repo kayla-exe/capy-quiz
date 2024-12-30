@@ -39,3 +39,12 @@ The Sour Gummy font was chosen to be used throughout the entire website. This fo
 the website. Sans serif was selected as a backup in case, for any reason, the main font would not display clearly.
 
 ## Features
+- ### Logo and Title
+    - The landing page of the website has a very simple layout which includes a H1 heading stating the name of the quiz, as well a simple capybara graphic. Just below is another simple H1 statment
+      encouraging users to test their knowledge by completing the quiz.
+  
+  ((LANDING PAGE))
+
+- ### Interactive Buttons
+    - The multiple choice answers are placed in 4 interactive buttons for the user to select. As the user hovers a button, their cursor becomes a 'pointer', easily conveying that these buttons are able to clicked
+      and interacted with. Once one of the buttons is clicked, another button cannot be pressed. This is to disallow the user from changing their answer, and potentially 'cheating'.
