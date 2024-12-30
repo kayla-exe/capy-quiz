@@ -45,6 +45,79 @@ the website. Sans serif was selected as a backup in case, for any reason, the ma
   
   ((LANDING PAGE))
 
-- ### Interactive Buttons
+- ### Answer Buttons
     - The multiple choice answers are placed in 4 interactive buttons for the user to select. As the user hovers a button, their cursor becomes a 'pointer', easily conveying that these buttons are able to clicked
       and interacted with. Once one of the buttons is clicked, another button cannot be pressed. This is to disallow the user from changing their answer, and potentially 'cheating'.
+
+  ((BUTTONS))
+
+- ### Next Button
+    - The user proceeds to the next question (or score screen) by clicking on the 'Next' button. The next button has a display of 'none' until an answer is selected. This stops the user from being able to jump to
+      the next question without inputting an answer. When the user hovers the 'Next' button, the cursor becomes a 'pointer'. Once the user has completed all 5 questions, the 'Next' button's InnerHTML changes to 
+      'Try Again' which will reroute the user back to the start of the quiz and also reset their score.
+
+  ((NEXT BUTTON & TRY AGAIN BUTTON))
+
+- ### Score
+    - Once the user has completed the quiz, their score is displayed. ${score} was used, allowing the Javascript to adjust the figure to each individual's final score. Even though there are only 5 question as of 
+      right now, ${questions.length} was used to allow a future developer to add additional questions and have the Javascript adapt without needing any changing.
+
+  ((SCORE))
+
+### Features Left to Implrement
+  - A constant counting display of score
+  - A leaderboard using local storage and username input
+
+## Testing
+
+### Validator Testing
+- ### HTML 
+    - No errors or warnings when put through the official HTML Validator ((W3C VALIDATOR))
+
+- ### CSS
+    - No errors or warnings when put through the official CSS Validator ((W3V VALIDATOR))
+
+- ### Javascript
+    - No errors or warnings when put through the JSHint Validator ((JSHINT VALIDATOR))
+
+### Accessibility
+  - The site achieved a Lighthouse accessibility score of near 100% on both mobile and desktop which confirms that the colours and fonts chosen are easy to read and accessible
+
+### Button Testing
+  - Each button was tested manually to ensure the user is able to jump to the next question, and select only one answer per question and confirming that all functions run as 
+    needed.
+
+### Game Testing
+  - The game was tested by tech-savvy friends and family to ensure everything ran as intended, which include but are not limited to:
+      - 'Answer' buttons changed color to indicate correct/incorrect answer was selected.
+      - 'Next' button remained invisible until an answer was selected.
+      - The user's final score was correct.
+      - The user was able to restart the quiz once it was completed.
+
+### Browser Testing
+  - The quiz app website was tested in Google Chrome, Mozilla Firefox, Safari and Microsoft Edge browsers with no errors or issues noted.
+
+### Device Testing
+  - The website was tested on multiple devices including Desktop, Laptop, iPad, iPhone SE and Galaxy Z Fold 5. In both landscape and portrait mode, the website maintained it's
+    responsiveness, working as intended. Chrome Dev Tools were also used to allow the website to be tested on a multitude of other dimensions.
+  - The following website was also used to test responsiveness and to ensure media queries worked as intended ((RESPONSINATOR))
+
+## Fixed Bugs
+### Placing Answers in Buttons
+  - When creating the base HTML, I had originally added 4 buttons to which the plan was to place the answers to each question within.
+  - While theorycrafting by trying different methods of attaching the different answers of the different questions to each button, I was having difficulty in not only placing
+    the answer.text inside those 4 buttons within my index.html, I also struggled for the answers to the following question to be displayed.
+  - To work around this, I made use of the document.createElement() method to call a function to create additional buttons containing the answer.text, and incorporated the
+    style.display method to hide the original 4. The following YouTube video was great help, and educated me on why this method works: ((YOUTUBE LINK)).
+  - This allowed my Javascript to create additional individual buttons for each answer, while hiding the previous buttons. This kept my site clean, and also only required
+    2 functions within my script.js.
+
+### Known Bugs
+There are no known bugs.
+
+## Technologies Used
+### Languages
+  - HTML
+  - CSS
+  - Javascript
+  
