@@ -12,18 +12,20 @@
     <title>Capy Quiz</title>
 </head>
 <body>
+    <!-- logo anchor and intro paragraph -->
     <h1 class="heading">
         <a href="index.html"><img class="logo" src="assets/images/logo/capy-logo.png" alt="logo">Capy Quiz </a>
     </h1>
     <p class="capy-intro">If you have been on the internet in 2024, you have no doubt seen a video of a capybara. They are cute and comical,
     easily taking the internet by storm, and even having songs made about them!
     </p>
-    
+    <!-- game area box -->
     <div class="game-area">
         <h1>Test your capybara knowledge with these 5 questions!</h1>
         <div class="questions-area">
             <h2 id="questions">Question goes here</h2>
         </div>
+        <!-- answers area within game area box -->
         <div id="answers-area">
             <button class="btn">Answer 1</button>
             <button class="btn">Answer 2</button>
@@ -32,9 +34,10 @@
         </div>
         <button id="next-btn">Next question</button>
     </div>
-
+    <!-- restart information -->
     <p class="restart-info">If you wish to restart the quiz at anytime, click the logo at the top of the page!</p>
     
+    <!-- javascript linked at end of html to make sure DOM elements are loaded before and to improve load speed -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

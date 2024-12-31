@@ -84,6 +84,7 @@ function showQuestion() {
 
     /**
      * creating answer buttons
+     * code taken from: https://youtu.be/PBcqGxrr9g8?si=ryswgcVlomRzBkUs&t=1229
      */
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -125,6 +126,7 @@ function answerSelect(e) {
      * disabling the ability to click other
      * buttons and revealing the 'next'
      * button
+     * personally adjusted but inspired from https://youtu.be/Vp8x8-reqZA?si=N71h57t5flGGg59S&t=3649
      */
     Array.from(answerButtons.children).forEach(button => {
         if(button.dataset.correct === "true"){
