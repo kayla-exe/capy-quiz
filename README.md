@@ -42,12 +42,7 @@ the website. Sans serif was selected as a backup in case, for any reason, the ma
 
 ### Wireframe
 Wireframe was produced using Wireframe.cc
-
-<details>  
-  <summary>Desktop Wireframe</summary>          
-      <img src="documentation/readme-images/wireframe.png"  
-
-</details>
+![Wireframe image](documentation/readme-images/wireframe.png)
 
 ## Features
 - ### Logo and Title
