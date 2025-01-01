@@ -82,7 +82,7 @@ Wireframe was produced using Wireframe.cc
       right now, {questionlength} was used to allow a future developer to add additional questions and have the Javascript adapt without needing any changing.
  
 
-### Features Left to Implrement
+### Future Features
   - A constant counting display of score
   - A leaderboard using local storage and username input
 
