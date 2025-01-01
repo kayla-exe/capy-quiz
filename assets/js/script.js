@@ -145,7 +145,7 @@ function showScore(){
     fullReset();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Click below to try again!`;
     nextButton.innerHTML = "Try again";
-    nextButton.style.display = "block"
+    nextButton.style.display = "block";
 }
 
 /**

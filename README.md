@@ -29,6 +29,8 @@ The imagery and graphics used were both given careful considering to ensure they
 to the site. A simple capybara icon was choosen for the favicon, and casual icons and graphics of capybaras were used throughout.
 
 ### Color Scheme
+  ![Color scheme image](documentation/readme-images/color-palette.png)
+
 - The color scheme of the site was chosen to not only not strain the user's eyes, but also to tie in with the nature of the quiz.
 - The decision to make the full background of webpage light green was to increase user accesibility. Too many bright whites against stark dark colors can easily strain the user's eyes, and
   would make the user less likely to return.
@@ -40,28 +42,32 @@ the website. Sans serif was selected as a backup in case, for any reason, the ma
 
 ## Features
 - ### Logo and Title
-    - The landing page of the website has a very simple layout which includes a H1 heading stating the name of the quiz, as well a simple capybara graphic. Just below is another simple H1 statment
-      encouraging users to test their knowledge by completing the quiz.
+    - The landing page of the website has a very simple layout which includes a H1 heading stating the name of the quiz, as well a simple capybara graphic. The logo and/or the title can be clicked at anytime
+      to bring the user back to the start of the quiz, making sure they don't get 'stuck' having to complete the quiz.
   
-  ((LANDING PAGE))
+  ![Logo and title image](documentation/readme-images/logo-title.png)
+
+- ### Short Introduction Information
+    - Beneath the title, there is a short paragraph giving the user some small information about capybaras and how they 'took the internet by storm'. A decision was made not to include facts, or educational
+      information in case any hints were given to some of the questions in the quiz itself.
+
+  ![Capybara information](documentation/readme-images/capy-info.png)
 
 - ### Answer Buttons
     - The multiple choice answers are placed in 4 interactive buttons for the user to select. As the user hovers a button, their cursor becomes a 'pointer', easily conveying that these buttons are able to clicked
       and interacted with. Once one of the buttons is clicked, another button cannot be pressed. This is to disallow the user from changing their answer, and potentially 'cheating'.
 
-  ((BUTTONS))
+  ![Answer buttons](documentation/readme-images/answer-buttons.png)
 
 - ### Next Button
     - The user proceeds to the next question (or score screen) by clicking on the 'Next' button. The next button has a display of 'none' until an answer is selected. This stops the user from being able to jump to
       the next question without inputting an answer. When the user hovers the 'Next' button, the cursor becomes a 'pointer'. Once the user has completed all 5 questions, the 'Next' button's InnerHTML changes to 
       'Try Again' which will reroute the user back to the start of the quiz and also reset their score.
 
-  ((NEXT BUTTON & TRY AGAIN BUTTON))
 
 - ### Score
-    - Once the user has completed the quiz, their score is displayed. ${score} was used, allowing the Javascript to adjust the figure to each individual's final score. Even though there are only 5 question as of 
-      right now, ${questions.length} was used to allow a future developer to add additional questions and have the Javascript adapt without needing any changing.
-
+    - Once the user has completed the quiz, their score is displayed. {score} was used, allowing the Javascript to adjust the figure to each individual's final score. Even though there are only 5 question as of 
+      right now, {questionlength} was used to allow a future developer to add additional questions and have the Javascript adapt without needing any changing.
   ((SCORE))
 
 ### Features Left to Implrement
