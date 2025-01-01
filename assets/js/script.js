@@ -1,5 +1,6 @@
 /**
  * questions and answers
+ * inspired by https://shorturl.at/DwMjG
  */
 const questions = [
     {
