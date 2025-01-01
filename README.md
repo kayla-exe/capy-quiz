@@ -69,6 +69,14 @@ Wireframe was produced using Wireframe.cc
       'Try Again' which will reroute the user back to the start of the quiz and also reset their score.
 
 
+
+
+![score](https://github.com/user-attachments/assets/b5ba1d69-acf0-407b-bbf1-001671375173)
+
+
+
+
+
 - ### Score
     - Once the user has completed the quiz, their score is displayed. {score} was used, allowing the Javascript to adjust the figure to each individual's final score. Even though there are only 5 question as of 
       right now, {questionlength} was used to allow a future developer to add additional questions and have the Javascript adapt without needing any changing.
